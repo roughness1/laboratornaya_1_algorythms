@@ -66,7 +66,7 @@ def measure_time(func, data):
     return end - start
 
 ```
-## Для функции с одним параметром, для замерения времени использовалась функция measure_time1
+## Для функций с двумя параметрами, для замерения времени использовалась функция measure_time1
 ```python
 def measure_time1(func, data,data1):
     start = time.perf_counter()
