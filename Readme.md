@@ -56,3 +56,22 @@
 | 10 | 0.00000470 |
 | 100 | 0.00006640 |
 | 500 | 0.00035850 |
+
+## Для функций с одним параметром, для замерения времени использовалась функция measure_time
+```python
+def measure_time(func, data):
+    start = time.perf_counter()
+    func(data)
+    end = time.perf_counter()
+    return end - start
+
+```
+## Для функции с одним параметром, для замерения времени использовалась функция measure_time1
+```python
+def measure_time1(func, data,data1):
+    start = time.perf_counter()
+    func(data,data1)
+    end = time.perf_counter()
+    return end - start
+
+```
