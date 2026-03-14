@@ -68,10 +68,21 @@ def measure_time(func, data):
 ```
 ## Для функций с двумя параметрами, для замерения времени использовалась функция measure_time1
 ```python
+import time
 def measure_time1(func, data,data1):
     start = time.perf_counter()
     func(data,data1)
     end = time.perf_counter()
     return end - start
 
+```
+## Для генерации массивов использовалась функция generate_array
+
+```python
+import random
+def generate_array(n):
+    arr = []
+    for i in range(n):
+        arr.append(random.randint(0, 100))
+    return arr
 ```
