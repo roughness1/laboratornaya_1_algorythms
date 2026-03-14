@@ -49,3 +49,13 @@ def multiplication_table(n):
             row.append(i * j)
         table.append(row)
     return table
+    
+def quick_sort(array):
+    if len(array) < 2:
+        return array
+    else:
+        pivotal = array[0]
+        less = [i for i in array[1:] if i <= pivotal]
+        more = [i for i in array[1:] if i > pivotal]
+        return quick_sort(less) + [pivotal] + quick_sort(more)
+
